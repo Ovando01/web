@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="portafolio.css">
+    <style>
+        /* Estilos para ocultar la sección de proyectos por defecto */
+        #proyectos {
+            display: none; /* Oculta la sección de proyectos inicialmente */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#hero">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#" onclick="mostrarProyectos()">Proyectos</a> <!-- Llama a la función JavaScript -->
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <p>Diseñador y desarrollador web profesional</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+
+        <div class="contenedor">
+            <p>Soy Yeison Ovando, un desarrollador creativo que se especializa en construir interfaces dinámicas y experiencias interactivas.
+            un programador que busca ser uno de los mejores a nivel nacional, 
+            con interés de ser creador de un club de desarrolladores donde se puedan compartir ideas de crecimiento y proyectos realizados, 
+            soy una persona muy extrovertida y muy positivo, 
+            por el momento solo he creado un Blog llamado <b>Lo malo de mi país</b>, 
+            dónde verán noticias actualizadas y quejas de la sociedad de cada uno de los abusos cometidos hacia ellos, no te pierda la oportunidad de estar al día desde mi Blog.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="proyecto1.png" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto 1. Página Web para mantener al usuario actualizado con las más recientes novedades.</p>
+                <ul>
+                    <li><a href="file:///C:/Users/yeiso/Documents/Teorema%20Web/Pagina%20web/Index.html"><b>Ir</b></a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <img src="proyecto2.png" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto 2. Creación de una plataforma de comercio electrónico funcional y escalable.</p>
+            </div>
+
+            <div class="project">
+                <img src="proyecto3.png" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve del proyecto 3. Creación de una tienda de comercio electrónico funcional y escalable.</p>
+                <ul>
+                  <li><a href="file:///C:/Users/yeiso/Documents/Teorema%20Web/Pagina%20web/index3.html"><b>Ir</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través del siguiente correo: <a href="mailto:yeisonovando@gmail.com">yeisonovando@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Portafolio - Todos los derechos reservados</p>
+        <p>Conéctate conmigo en <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a></p>
+    </footer>
+    
+    <!-- JavaScript para mostrar/ocultar la sección de proyectos -->
+    <script>
+        function mostrarProyectos() {
+            var proyectos = document.getElementById("proyectos");
+            if (proyectos.style.display === "none" || proyectos.style.display === "") {
+                proyectos.style.display = "block"; // Muestra la sección de proyectos
+                proyectos.scrollIntoView({ behavior: 'smooth' }); // Desplaza suavemente hasta la sección
+            } else {
+                proyectos.style.display = "none"; // Oculta la sección de proyectos
+            }
+        }
+    </script>
+</body>
+</html>

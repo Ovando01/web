@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo Malo de Mi País</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <!-- Encabezado de página -->
+    <header>
+        <h1>Mi Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#politica">Política</a></li>
+                <li><a href="#economia">Economía</a></li>
+                <li><a href="#sociedad">Sociedad</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="search">
+            <label for="search-bar">Buscar Problema:</label>
+            <input type="text" id="search-bar" placeholder="Buscar...">
+        </div>
+
+        <!-- Encabezado de contenido -->
+        <div class="header-content">
+            <!-- Imagen de la bandera -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg" alt="Bandera Dominicana" class="bandera">
+            
+            <!-- Título principal y autor -->
+            <div class="title-author">
+                <h1>Lo Malo de Mi País</h1>
+                <p>Autor: Yeison Ovando</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de política -->
+        <section id="politica">
+            <h2>Noticias destacadas</h2>
+            <ul>
+                <li><a href="https://www.edesur.com.do/noticias/marranzini-presenta-plan-para-la-recuperacion-del-sistema-de-distribucion-electrica-de-rd/">La mentira de Edesur Dominicana</a></li>
+                <li><a href="https://www.diariolibre.com/actualidad/justicia/2024/08/23/ana-josefa-garcia-cuello-podria-ser-declarada-inimputable/2827994">Caso Ana-josefa</a></li>
+                <li><a href="#">Problema 1 en Economía</a></li>
+            </ul>
+        </section>
+
+        <!-- Sección de economía -->
+        <section id="economia">
+            <h2>Economía</h2>
+            <ul>
+                <li><a href="#">Problema 1 en Economía</a></li>
+                <li><a href="#">Problema 2 en Economía</a></li>
+            </ul>
+        </section>
+
+        <!-- Sección de sociedad -->
+        <section id="sociedad">
+            <h2>Sociedad</h2>
+            <ul>
+                <li><a href="#">Problema 1 en Sociedad</a></li>
+                <li><a href="#">Problema 2 en Sociedad</a></li>
+                <li>
+                    <!-- Noticia de Marileidy Paulino dentro de la sección Sociedad -->
+                    <h3>¡Lo logró! Marileidy Paulino gana la medalla de oro en los Juegos Olímpicos</h3>
+                    <p>La velocista <b>Marileidy Paulino</b> ganó este viernes la final de los 400 metros lisos en el Estadio de Francia, en París, 
+                        y se convirtió en la primera mujer dominicana en la historia de los <b>Juegos Olímpicos</b> en lograr esta hazaña.</p>
+                    <blockquote>“Aún no lo he asimilado” dijo <strong>Marileidy Paulino</strong>. La velocista aseguró lo siguiente: <em>"Si Dios lo permite, seguiré enfocándome para el mundial próximo"</em></blockquote>
+                    <p><mark>Fecha: 9 de agosto de 2024</mark> | <small>Publicado por la redacción del Grupo 1</small></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer o pie de página -->
+    <footer>
+        <p>© 2024 Lo Malo de Mi País by Yeison Ovando. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para el colapso de secciones -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sectionHeaders = document.querySelectorAll('main section h2');
+            
+            sectionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const section = header.parentElement;
+                    section.classList.toggle('collapsed');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo del header */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1ABC9C;
+}
+
+/* Diseño de las secciones principales */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #2C3E50;
+    padding-bottom: 10px;
+    color: #34495E;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    background-color: #ECF0F1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: scale(1.02);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2980B9;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #1ABC9C;
+    text-decoration: underline;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* Estilo para el filtro */
+.filter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filter label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* styles.css */
+
+/* Estilo del encabezado */
+header {
+    background-color: #0a7ac5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bandera {
+    width: 50px; /* Tamaño de la bandera */
+    height: auto;
+
+}
+
+.title-author {
+    text-align: left;
+}
+
+.title-author h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.title-author p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1ABC9C;
+}
+
+.marileidy{
+
+    width: 100px; /* Tamaño de la bandera */
+    height: auto;
+}
+
